@@ -16,8 +16,11 @@ function handleName() {
   } else if (time >= 12 && time < 17) {
     document.querySelector(".heading__input").innerHTML =
       "Goedemiddag, " + inputHandle;
-  } else if (time >= 17 && time < 00) {
+  } else if (time >= 17 && time < 24) {
     document.querySelector(".heading__input").innerHTML =
       "Goedenavond, " + inputHandle;
+  } else if (time >= 24 && time < 6) {
+    document.querySelector(".header__input").innerHTML =
+      "Wat laat zeg! Ga eens slapen " + inputHandle;
   }
 }
